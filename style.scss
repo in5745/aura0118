@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.header__box {
+  padding-bottom: 10px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  .header__icon {
+    color: white;
+    font-size: 3em;
+    padding-left: 15px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    li {
+      padding: 0 10px;
+    }
+  }
+}
