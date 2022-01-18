@@ -4,13 +4,7 @@
           box-sizing: border-box;
 }
 
-.header__box {
-  padding: 5px;
-  background-color: black;
-  color: white;
-}
-
-.header__box .header__maxbox {
+.maxwidth-box {
   max-width: 1300px;
   margin: 0 auto;
   display: -webkit-box;
@@ -25,13 +19,34 @@
   width: 100%;
 }
 
-.header__box .header__maxbox .header__icon {
+.header__box {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.header__box .maxwidth-box {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header__box .maxwidth-box .header__icon {
   color: white;
   font-size: 3em;
   padding-left: 15px;
 }
 
-.header__box .header__maxbox ul {
+.header__box .maxwidth-box ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,12 +59,12 @@
           align-items: center;
 }
 
-.header__box .header__maxbox ul li {
+.header__box .maxwidth-box ul li {
   padding: 0 10px;
 }
 
 #main__banner {
-  height: 60vh;
+  height: 70vh;
   background: url(https://images.unsplash.com/photo-1499988921418-b7df40ff03f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,16 +78,121 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 25px;
+  padding: 0 20px;
 }
 
 #main__banner .main__banner-imgbox > h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 600;
   color: #727880;
+  letter-spacing: -1px;
 }
 
 #main__banner h2 {
-  padding-top: 15px;
+  padding-top: 25px;
+  font-size: 2em;
+  color: #1d1b1b;
+}
+
+#main__banner .far {
+  font-size: 3em;
+  padding-top: 80px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#part1 {
+  background: #ececec;
+}
+
+#part1 .part1__imgbox {
+  height: 50vh;
+  background: url(https://images.unsplash.com/photo-1527519135413-1e146b552e10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#part1 .part1__imgbox p {
+  font-size: 1.5em;
+  line-height: 1em;
+  color: silver;
+  padding: 0 15px;
+}
+
+#part1 .part1__imgbox i {
+  font-size: 3em;
+  color: silver;
+  padding: 50px 15px;
+}
+
+/*#part2 {
+  height: 50vh;
+  .flex__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: cornsilk;
+    .flex__box-small {
+      width: 33.3%;
+      background: crimson;
+      height: 60vh;
+      margin: 25px 25px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}*/
+#part2 {
+  height: 50vh;
+}
+
+#part2 .flex__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: cornsilk;
+}
+
+#part2 .flex__box .flex__box-small {
+  width: 33.3%;
+  background: crimson;
+  /* padding: 15% 0;*/
+  margin: 25px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#part2 .flex__box .flex__box-small h2 {
+  font-size: 2.5em;
 }
 /*# sourceMappingURL=style.css.map */
