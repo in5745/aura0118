@@ -14,10 +14,12 @@
 }
 
 .header__box {
+  width: 100%;
+  position: fixed;
   padding: 5px;
   background-color: black;
 
-  .header__icon {
+  .header__icon a {
     color: white;
     font-size: 3em;
     padding-left: 15px;
