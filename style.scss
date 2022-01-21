@@ -399,17 +399,30 @@ footer {
         margin: 0 0.5em;
         position: relative;
         cursor: pointer;
-
-        h3 {
+        .introduction2__wrap-hover {
           position: absolute;
           width: 100%;
           background: black;
           height: 20vh;
-          color: red;
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(10px);
+          transition: all 300ms ease-in;
+          h3 {
+            color: red;
+          }
         }
-        li:hover h3 {
-          background-color: yellow;
-        }
+      }
+      li:hover .introduction2__wrap-hover {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+      }
+      li:hover {
+        background: url(https://images.unsplash.com/photo-1596625820723-f0f481ff80be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)
+            center/cover no-repeat,
+          rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply; /*백그라운드이미지 색상어둡게*/
       }
       li:nth-child(2) {
         background: url(https://images.unsplash.com/photo-1505521377774-103a8cc2f735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)
