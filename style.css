@@ -578,6 +578,7 @@ footer ul {
   margin: 0 0.5em;
   position: relative;
   cursor: pointer;
+  text-align: center;
 }
 
 #introduction2 .introduction2__wrap-imgbox ul li .introduction2__wrap-hover {
@@ -594,7 +595,29 @@ footer ul {
 }
 
 #introduction2 .introduction2__wrap-imgbox ul li .introduction2__wrap-hover h3 {
-  color: red;
+  color: white;
+  padding-top: 2em;
+}
+
+#introduction2 .introduction2__wrap-imgbox ul li .introduction2__wrap-hover a:hover i {
+  color: cyan;
+}
+
+#introduction2 .introduction2__wrap-imgbox ul li .introduction2__wrap-hover i {
+  color: white;
+  font-size: 2.5em;
+  padding: 1em 0;
+  position: relative;
+}
+
+#introduction2 .introduction2__wrap-imgbox ul li .introduction2__wrap-hover i::after {
+  content: '';
+  width: 15px;
+  padding-right: 20px;
+  border-bottom: 3px solid white;
+  position: absolute;
+  top: 20px;
+  right: 6px;
 }
 
 #introduction2 .introduction2__wrap-imgbox ul li:hover .introduction2__wrap-hover {
@@ -607,7 +630,19 @@ footer ul {
 #introduction2 .introduction2__wrap-imgbox ul li:hover {
   background: url(https://images.unsplash.com/photo-1596625820723-f0f481ff80be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) center/cover no-repeat, rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
-  /*백그라운드이미지 색상어둡게*/
+  /*백그라운드이미지 색상어둡게 꼭 백그라운드이미지에 rgba값이 필수로 들어가야 사용됨*/
+}
+
+#introduction2 .introduction2__wrap-imgbox ul li:nth-child(2):hover {
+  background: url(https://images.unsplash.com/photo-1505521377774-103a8cc2f735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) center/cover no-repeat, rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  /*백그라운드이미지 색상어둡게 꼭 백그라운드이미지에 rgba값이 필수로 들어가야 사용됨*/
+}
+
+#introduction2 .introduction2__wrap-imgbox ul li:last-child:hover {
+  background: url(https://images.unsplash.com/photo-1507917570388-d661984ea008?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80) center/cover no-repeat, rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  /*백그라운드이미지 색상어둡게 꼭 백그라운드이미지에 rgba값이 필수로 들어가야 사용됨*/
 }
 
 #introduction2 .introduction2__wrap-imgbox ul li:nth-child(2) {
