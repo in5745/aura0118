@@ -367,6 +367,7 @@ footer {
 
 #introduction2 {
   margin: 0 auto;
+  padding-bottom: 3em;
   .introduction2__wrap {
     display: flex;
     flex-direction: column;
@@ -451,7 +452,7 @@ footer {
         background-blend-mode: multiply; /*백그라운드이미지 색상어둡게 꼭 백그라운드이미지에 rgba값이 필수로 들어가야 사용됨*/
       }
       li:last-child:hover {
-        background: url(https://images.unsplash.com/photo-1507917570388-d661984ea008?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80)
+        background: url(https://images.unsplash.com/photo-1593956861273-5c74c3d0d8a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80)
             center / cover no-repeat,
           rgba(0, 0, 0, 0.5);
         background-blend-mode: multiply; /*백그라운드이미지 색상어둡게 꼭 백그라운드이미지에 rgba값이 필수로 들어가야 사용됨*/
@@ -461,7 +462,7 @@ footer {
           center/cover no-repeat;
       }
       li:last-child {
-        background: url(https://images.unsplash.com/photo-1507917570388-d661984ea008?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80)
+        background: url(https://images.unsplash.com/photo-1593956861273-5c74c3d0d8a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80)
           center/cover no-repeat;
       }
     }
